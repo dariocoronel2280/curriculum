@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Productos{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/portfolio-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Productos</h1>
+<span class="subheading">Currículo</span>
+{% endblock %}
+
+{% block content %}
+    {% for products in products %}
+        <!-- Proyecto -->
+        <div class="row products">  	
+            <div class="col-lg-2 col-md-4 offset-lg-1">
+                <img class="img-fluid" src="{{products.image.url}}" alt="">
+            </div>
+            <div class="col-lg-2 col-md-8">
+                <h2 class="section-heading title">{{products.title}}</h2>   
+                <p>{{products.description}}</p>
+                {% if products.link %}
+                    <p><a target="_blank" href="{{products.link}}">Más información</a></p>
+                {% endif %}
+                <p>{{products.price}}</p>
+                
+            </div>
+        </div>
+            
+        <br>
+    {% endfor %}
+{% endblock %}

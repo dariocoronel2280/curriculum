@@ -1,0 +1,73 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Portada{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Dario Coronel</h1>
+<span class="subheading">Diseñador y Desarrollador web </span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.gif'%}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Dario Coronel</h2>   
+        <p>Responsable, Creativo y .</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit...</p>
+    </div>
+</div>
+<hr>
+
+
+<div class="row"> 
+    <div class="col-lg-2 col-md-4">
+       
+         <i class="fa fa-html5" aria-hidden="true"></i>
+    </div>
+    <div class="col-lg-4 col-md-8">
+        <h2 class="section-heading">Diseño web </h2>  
+        <p>Desarrollo y Diseño de paginas web y aplicativos web con las siguientes tecnologias: Html, css, javascript, bootstrap, python y django</p> 
+        <span class="boton" > <a target="_blank"  href="{% url 'portfolio' %}">ver trabajos</a> </span>
+        
+        
+    </div>
+
+    <div class="col-lg-2 col-md-4">
+        <i class="fa fa-desktop" aria-hidden="true"></i>
+    </div>
+    <div class="col-lg-4 col-md-8">
+        <h2 class="section-heading">Diseño gráfico</h2>   
+        <p>Desarrollo de identidad visual, campañas digitales, campañas tradicionales y manejo de las siguientes herramientas: Adobe Photoshop, Adobe Illustrator,Adobe InDesign, Cinema 4d</p> 
+        <span class="boton" > <a target="_blank"  href="{% url 'portfolio' %}">ver trabajos</a> </span>
+
+        
+    </div>
+
+    <div class="col-lg-2 col-md-4">
+        <i class="fa fa-play" aria-hidden="true"></i>
+    </div>
+    <div class="col-lg-4 col-md-8">
+        <h2 class="section-heading">Produccion audiovisual</h2>   
+       <p>Realizacion de spots, institucionales y cortometrajes y manejo de las siguientes herramientas: Adobe After Effects, Adobe Premiere, Sony Vegas </p> 
+        <span class="boton" > <a target="_blank"  href="{% url 'portfolio' %}">ver trabajos</a> </span>
+        
+        
+    </div>
+
+    <div class="col-lg-2 col-md-4">
+       <i class="fa fa-camera-retro" aria-hidden="true"></i>
+    </div>
+    <div class="col-lg-4 col-md-8">
+        <h2 class="section-heading">Fotografía</h2>   
+        <p>Desarrollo y elaboración de contenido visual</p> 
+        <span class="boton" > <a target="_blank"  href="{% url 'portfolio' %}">ver trabajos</a> </span>
+
+        
+    </div>
+    
+</div>
+{% endblock %}

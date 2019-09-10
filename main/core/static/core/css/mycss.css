@@ -1,0 +1,57 @@
+i.fa-code{
+    font-size: 150px;
+    margin-top: 58px;
+    color: #007690;
+}
+
+i.fa-desktop{
+    font-size: 150px;
+    margin-top: 58px;
+    color: #007690;
+}
+
+i.fa-camera-retro{
+    font-size: 150px;
+    margin-top: 58px;
+    color: #007690;
+}
+
+i.fa-play{
+    font-size: 150px;
+    margin-top: 58px;
+    color: #007690;
+}
+
+i.fa-html5{
+    font-size: 150px;
+    margin-top: 58px;
+    color: #007690;
+}
+li.list{
+    list-style: none;
+    font-weight: 300;
+}
+
+span.boton{
+    margin: 70px;
+    padding: 11px;
+    /* margin-top: 49px; */
+    width: 150px;
+    height: 200px;
+    background-color: #007690;
+    color: white;
+    border-radius: 17px;
+}
+ span.boton a{
+   
+
+    color: white;
+  
+}
+
+span.boton a:hover{
+   
+
+    color: white;
+  
+}
